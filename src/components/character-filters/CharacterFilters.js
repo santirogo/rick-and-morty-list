@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useCharacterContext } from '../../context/CharactersContext';
-import { STATUS_OPTIONS, SPECIES_OPTIONS } from './constants';
+import { STATUS_OPTIONS } from './constants';
 import './CharacterFilters.css'
 
 function CharacterFilters() {
