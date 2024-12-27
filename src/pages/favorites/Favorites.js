@@ -7,7 +7,7 @@ function Favorites() {
     const { favorites, toggleFavorite } = useFavoriteContext();
 
     if (!favorites || favorites.length === 0) {
-        return <p>No tienes personajes favoritos.</p>;
+        return <p className="no-favorites-message">No tienes personajes favoritos.</p>;
     }
 
     return (
