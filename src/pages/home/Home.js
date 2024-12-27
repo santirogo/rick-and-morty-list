@@ -29,7 +29,7 @@ const Home = () => {
 
             { loading ? 
                 ( <Spinner /> ) : 
-                (<section className="character-list">
+                filteredCharacters.length ? (<section className="character-list">
                     {filteredCharacters.map((character) => (
                         <CharacterCard
                             key={character.id}
@@ -38,7 +38,7 @@ const Home = () => {
                             toggleFavorite={toggleFavorite}
                         />
                     ))}
-                </section>) 
+                </section>) : <p className="info-message">No hay personajes filtrados</p>
             }
 
             <div className="pagination">

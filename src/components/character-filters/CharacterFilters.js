@@ -18,6 +18,7 @@ function CharacterFilters() {
         const fetchSpecies = () => {
             const speciesSet = new Set(characters.map(character => character.species));
             setSpeciesOptions([...speciesSet]);
+            updateFilter("species", "");
         };
 
         fetchSpecies();
