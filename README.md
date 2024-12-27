@@ -7,8 +7,9 @@ Este proyecto es una aplicación React con varias funcionalidades, como la visua
 1. [Descripción](#descripción)
 2. [Tecnologías utilizadas](#tecnologías-utilizadas)
 3. [Estructura del Proyecto](#estructura-del-proyecto)
-4. [Instalación](#instalación)
-5. [Cómo ejecutar las pruebas](#cómo-ejecutar-las-pruebas)
+4. [Visualización](#visualizacion)
+5. [Instalación](#instalación)
+6. [Cómo ejecutar las pruebas](#cómo-ejecutar-las-pruebas)
 
 ## Descripción
 
@@ -73,7 +74,11 @@ Las pruebas cubren interacciones entre estos componentes y su comportamiento baj
     │   ├── /index.css                        # Estilos globales (resets, fonts, etc.)
     │   └── /setupTests.js
 
-  ## Instalación
+## Visualizacion
+
+Abre: https://santirogo.github.io/rick-and-morty-list/
+
+## Instalación
 
 ### Requisitos previos
 
@@ -83,7 +88,7 @@ Las pruebas cubren interacciones entre estos componentes y su comportamiento baj
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/santirogo/Rule-of-Thumb.git
+   git clone https://github.com/santirogo/rick-and-morty-list.git
 
 2. Instala las dependencias:
     ```bash
