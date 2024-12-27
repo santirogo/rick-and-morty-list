@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { useCharacterContext } from '../../context/CharactersContext';
 import { STATUS_OPTIONS, SPECIES_OPTIONS } from './constants';
 import './CharacterFilters.css'
@@ -8,7 +9,19 @@ function CharacterFilters() {
         updateFilter,
         clearFilters,
         error,
+        characters,
     } = useCharacterContext();
+
+    const [speciesOptions, setSpeciesOptions] = useState([]);
+
+    useEffect(() => {
+        const fetchSpecies = () => {
+            const speciesSet = new Set(characters.map(character => character.species));
+            setSpeciesOptions([...speciesSet]);
+        };
+
+        fetchSpecies();
+    }, [characters]);
 
     return (
         <section className="filters">
@@ -18,7 +31,7 @@ function CharacterFilters() {
                 onChange={(event) => updateFilter("status", event.target.value)}
             >
                 <option value="">Filtrar por estado</option>
-                { STATUS_OPTIONS.map((option) => <option key={option.value} value={option.value}>{option.message}</option>) }
+                { STATUS_OPTIONS.map((option, index) => <option key={`${option.value}-${index}`} value={option.value}>{option.message}</option>) }
             </select>
 
             <select
@@ -27,7 +40,7 @@ function CharacterFilters() {
                 onChange={(event) => updateFilter("species", event.target.value)}
             >
                 <option value="">Filtrar por especie</option>
-                { SPECIES_OPTIONS.map((option) => <option key={option.value} value={option.value}>{option.message}</option>) }
+                { speciesOptions.map((option) => <option key={option} value={option}>{option}</option>) }
             </select>
             
             <input

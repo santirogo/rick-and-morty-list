@@ -62,6 +62,7 @@ export const CharactersProvider = ({ children }) => {
             updateFilter,
             clearFilters,
             filteredCharacters,
+            characters,
             currentPage,
             handlePageChange,
             totalPages,
