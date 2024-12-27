@@ -1,6 +1,6 @@
-# Proyecto de Test de Componentes React con Jest y React Testing Library
+# Prueba técnica MeLi
 
-Este proyecto es una aplicación React con varias funcionalidades, como la visualización de personajes de una serie, la gestión de favoritos y la paginación. El propósito de este repositorio es probar el comportamiento y las interacciones de los componentes con Jest y React Testing Library.
+Este proyecto es una aplicación React con varias funcionalidades, como la visualización de personajes de una serie, la gestión de favoritos y la paginación.
 
 ## Índice
 
@@ -13,22 +13,15 @@ Este proyecto es una aplicación React con varias funcionalidades, como la visua
 
 ## Descripción
 
-Este proyecto incluye pruebas unitarias para los siguientes componentes clave de una aplicación de React:
+Este es un proyecto de una aplicación web interactiva basada en la API de Rick and Morty. Permite explorar los personajes de la famosa serie de animación, ver detalles sobre ellos y gestionarlos en una lista de favoritos.
 
-- **`Favorites`**: Muestra los personajes favoritos del usuario.
-- **`Home`**: Muestra una lista de personajes filtrados, con la capacidad de agregar o quitar de favoritos.
-- **`CharacterCard`**: Muestra los detalles de un personaje y permite agregarlo a favoritos.
-- **`CharacterFilters`**: Permite filtrar los personajes por estado, especie o nombre.
-- **`Spinner`**: Muestra un indicador de carga mientras se obtienen los datos.
-
-Las pruebas cubren interacciones entre estos componentes y su comportamiento bajo diferentes condiciones de carga y error.
+La aplicación permite a los usuarios navegar entre las páginas de personajes, ver información detallada sobre cada uno, y agregar o quitar personajes de sus favoritos. Además, cuenta con un sistema de filtrado para que los usuarios puedan buscar personajes por nombre, estado o especie, y una funcionalidad de paginación para navegar a través de las páginas de personajes.
 
 ## Tecnologías utilizadas
 
 - **React**: Biblioteca principal para construir la interfaz de usuario.
 - **Jest**: Framework de pruebas en JavaScript.
 - **React Testing Library**: Herramienta de pruebas para React que facilita la simulación de interacciones de usuario.
-- **Mocking**: Uso de Jest para simular el comportamiento de los contextos y componentes hijos.
   
 ## Estructura del Proyecto
     
@@ -47,8 +40,8 @@ Las pruebas cubren interacciones entre estos componentes y su comportamiento baj
     │   │   │   ├── EpisodePopup.css          # Estilos de EpisodePopup
     │   │   │   └── EpisodePopup.test.js      # Pruebas para EpisodePopup
     │   │   ├── /navbar                       # Componente Navbar
-    │   │   │   ├── Navbar.js                # Lógica del componente Navbar
-    │   │   │   ├── Navbar.css               # Estilos de Navbar
+    │   │   │   ├── Navbar.js                 # Lógica del componente Navbar
+    │   │   │   ├── Navbar.css                # Estilos de Navbar
     │   │   ├── /spinner                      # Componente para mostrar el spinner de carga
     │   │   │   ├── Spinner.js                # Lógica del componente Spinner
     │   │   │   ├── Spinner.css               # Estilos de Spinner
