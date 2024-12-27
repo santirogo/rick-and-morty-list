@@ -11,18 +11,16 @@ function App() {
   return (
     <FavoriteProvider>
       <CharactersProvider>
-        <Router>
           <Navbar />
 
           <main>
             <Routes>
-              <Route exact path="/" element={<Home/>} />
-              <Route exact path="/character/:id" element={<CharacterDetail/>} />
-              <Route exact path="/favorites" element={<Favorites/>} />
+              <Route path="/" element={<Home/>} />
+              <Route path="/character/:id" element={<CharacterDetail/>} />
+              <Route path="/favorites" element={<Favorites/>} />
               <Route path="*" element={<Home/>} />
             </Routes>
           </main>
-        </Router>
       </CharactersProvider>
     </FavoriteProvider>
   );
