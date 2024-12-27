@@ -1,0 +1,34 @@
+.character-list-container {
+    padding: 5%;
+    .error-message {
+        color: red;
+        background-color: #f8d7da;
+        padding: 10px;
+        border: 1px solid #f5c6cb;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .character-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        button {
+            padding: 0.5rem 1rem;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        span {
+            font-size: 1.2rem;
+        }
+    }
+}
+
